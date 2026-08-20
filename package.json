@@ -1,0 +1,13 @@
+{
+  "name": "puppeteer-renderer",
+  "version": "1.0.0",
+  "description": "Microservicio para renderizar HTML a PNG con Puppeteer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "puppeteer": "^23.0.0"
+  }
+}
