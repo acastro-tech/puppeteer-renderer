@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 const crypto = require('crypto');
 
 const app = express();
+app.set('trust proxy', true);
 app.use(express.json({ limit: '10mb' }));
 
 let browser;
@@ -78,3 +79,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Puppeteer renderer escuchando en puerto ${PORT}`);
 });
+
